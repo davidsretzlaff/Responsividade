@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="David Retzlaff">
+    <link rel="stylesheet" href="frameworks/font-awesome/css/font-awesome.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <link rel="icon" href="img/icon.png">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,700,400' rel='stylesheet' type='text/css'>
+    <title>Responsividade</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <a href="responsividade.html"><h1 class="logo">Praticando Responsividade</h1></a>
+      <button type="button" name="open-menu" class="btn-menu"> <i class="fa fa-bars fa-lg" aria-hidden="true"></i></button>
+      <nav class="menu">
+        <a class="btn-close">X</a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Clientes</a></li>
+          <li><a href="#">Serviços</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Quem somos</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <script>
+      $(".btn-menu").click(function(){
+        $(".menu").show();
+      })
+      $(".btn-close").click(function(){
+        $(".menu").hide();
+      })
+    </script>
+
+  </body>
+</html>
